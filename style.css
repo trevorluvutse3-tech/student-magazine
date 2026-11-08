@@ -1,0 +1,413 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    color: black;
+}
+header {
+    background-color: cornflowerblue;
+    padding: 25px;
+}
+.navigation{
+    background-color: #123b70;
+    padding: 12px 20px;
+    
+}
+.navigation ul{
+    list-style:none;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin: 0;
+    padding:0;
+}
+.navigation a{
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    padding: 10px 18px;
+    display: block;
+    border-radius: 6px;
+    transition: 0.3s ease;
+}
+.navigation a:hover{
+    background-color: #f5b51b;
+    color:#123b70;
+    transform: translateY(-3PX);
+}
+.university-header{
+    display:flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+.university-header img{
+    width: 120px;
+    height: auto;
+}
+.university-header h1{
+    font-size: 30px;
+    color: white;
+    margin: 0;
+}
+.magazine-content{
+    width: 95%;
+    margin: 20px auto;
+}
+.admin img{
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    display:block;
+}
+.layout{
+    display:grid;
+    grid-template-columns: 40% 60%;
+}
+.profile{
+    background-color: #20ad39;
+    color: white;
+    padding: 25px;
+    font-size: 25px;
+}
+.history{
+    background-color: #f5b52b;
+    color: #30200b;
+    padding: 30px;
+    font-size: 30px;
+}
+.profile h2{
+    background-color: white;
+    color: #222;
+    padding: 10px;
+    border-radius: 10px;
+}
+.profile h3{
+    background-color: #e6b52b;
+    color: #26752c;
+    padding: 5px 12px;
+    border-radius: 20px;
+    display: inline-block;
+}
+.history h2{
+    text-align: center;
+    font-size: 25px;
+}
+.profile p
+.history p{
+    line-height: 1.7;
+    margin-bottom:20px;
+}
+.sports-box{
+    width: 90%;
+    margin: 30px auto;
+}
+.sports-box h2{
+    color: #123b70;
+    border-left: 5px solid #e6b52b;
+    padding-left:12px;
+    margin: 35px 0 20px;
+}
+.sports-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+.sport-card{
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+    border-bottom: 4px solid #e6b52b;
+    transition: 0.3s;
+}
+.sport-card :hover{
+    transform: translateY(-6px);
+    box-shadow: 0 7px 18px rgba(0,0,0,0.18);
+}
+.sport-card h3{
+    color: #087b49;
+}
+.news-grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 22px;
+}
+.news-card{
+    background: #f5f5f5;
+    padding: 25px;
+    border-radius: 10px;
+    border-left: 5px solid #087b49;
+    transition: 0.3s;
+}
+.news-card :hover{
+    background: #fff496;
+}
+.news-card span{
+    color: #087b49;
+    font-size: 12px;
+    font-weight: bold;
+}
+.news-card h3{
+    color: #123b70;
+}
+.card{
+    justify-content: left;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    gap: 20px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    transition: 0.3s ease;
+}
+.card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+#registerForm{
+    text-align: left;
+}
+#registerForm label{
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: #123b70;
+}
+#registerForm input{
+    display: block;
+    width: 100%;
+    padding: 12px;
+    border: 8px solid white;
+    border-radius: 7px;
+    margin-bottom: 12px;
+    box-sizing: border-box;
+    font-size: 18px;
+}
+#registerForm button{
+    width: 100%;
+    background-color: #123b70;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 7px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+#registerForm button:hover{
+    background-color: #123b70;
+    transform: translateX(-3px);
+}
+#loginForm{
+    text-align: left;
+}
+#loginForm label{
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 7px;
+    font-weight: bold;
+    color: #123b70;
+}
+#loginForm input{
+    display: block;
+    width: 100%;
+    padding: 13px;
+    border-radius: 9px;
+    margin-bottom: 10px;
+    border: 1px solid white;
+    font-size: 15px;
+    box-sizing: border-box;
+}
+#loginForm button{
+    width: 100%;
+    background-color: #123b70;
+    color: white;
+    border: none;
+    padding: 14px;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 16px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+#loginForm button:hover{
+    transform: translateX(-3px);
+}
+.news-section{
+    width:90%;
+    margin: 30px auto;
+}
+.news-section h2{
+    color: #087b49;
+    border-left: 5px solid #e6b52b;
+    padding-left: 12px;
+    margin-bottom: 25px;
+}
+.news-article{
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+}
+.news-article img{
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+
+}
+.article-content{
+    padding: 25px;
+}
+.article-content h2{
+    color: #123b70;
+    font-size: 26px;
+}
+.category{
+    color: #087b49;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.date{
+    color: gray;
+    font-size: 13px;
+}
+.article content p{
+    line-height: 1.8;
+    color: #333;
+}
+.caption{
+    font-style: italic;
+    font-size: 13px;
+    border-top: 1px solid #ddd;
+    padding-top: 12px;
+}
+.arts-header {
+    background: linear-gradient(120deg, #30104b, #9b287b);
+    color: white;
+    text-align: center;
+    padding: 55px 20px;
+}
+
+.arts-header h1 {
+    font-size: 42px;
+    letter-spacing: 4px;
+    margin: 0;
+}
+
+.arts-header p {
+    font-size: 17px;
+}
+.arts-container {
+    width: 90%;
+    margin: 35px auto;
+}
+.arts-intro {
+    background: #f8edf7;
+    padding: 25px;
+    border-radius: 10px;
+    line-height: 1.8;
+}
+
+.arts-intro h2 {
+    color: #70205f;
+}
+.section-title {
+    color: #70205f;
+    margin: 35px 0 20px;
+    border-left: 5px solid #e6b52b;
+    padding-left: 12px;
+}
+.arts-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.art-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+    transition: 0.3s;
+}
+
+.art-card:hover {
+    transform: translateY(-7px);
+}
+
+.art-card img {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+}
+
+.art-content {
+    padding: 20px;
+}
+
+.art-content h3 {
+    color: #70205f;
+}
+
+.art-content p {
+    line-height: 1.7;
+    color: #444;
+}
+.featured-art {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    background: #f4f0f5;
+    margin-top: 45px;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.featured-art img {
+    width: 100%;
+    height: 100%;
+    min-height: 350px;
+    object-fit: cover;
+}
+
+.featured-content {
+    padding: 25px;
+    line-height: 1.8;
+}
+
+.featured-content span {
+    color: #8c2775;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.featured-content h2 {
+    color: #30104b;
+}
+
+.featured-content a {
+    display: inline-block;
+    background: #70205f;
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 6px;
+}
+.arts-ending {
+    text-align: center;
+    padding: 40px 15px;
+}
+
+.arts-ending h2 {
+    color: #70205f;
+}
+
+.arts-footer {
+    background: #30104b;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
